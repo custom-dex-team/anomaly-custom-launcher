@@ -14,6 +14,10 @@ namespace Launcher
 {
     internal static class Program
     {
+        public static readonly string launcherPath = AppDomain.CurrentDomain.BaseDirectory;
+        public static readonly string parentPath = Directory.GetParent(launcherPath).FullName; 
+        public static readonly string modOrganizerLtx = Path.Combine(parentPath, "Mod Organizer/overwrite/gamedata/configs/axr_options.ltx");
+        public static readonly string modOrganizerLtxOld = Path.Combine(parentPath, "Mod Organizer/overwrite/gamedata/configs/axr_options.ltx.old");
         public static readonly string APPDATA = "appdata";
         private static readonly string BIN = "bin";
         private static readonly string GAMEDATA = "gamedata";
@@ -33,11 +37,6 @@ namespace Launcher
       "configs\\localization.ltx",
       "configs\\warfare_options.ltx"
         };
-        private static readonly char[] CHECKSUMS_SPLIT = new char[1]
-        {
-      ' '
-        };
-        private const int CHUNK_SIZE = 1048576;
         private static bool _deleteShaderCache;
 
         [STAThread]

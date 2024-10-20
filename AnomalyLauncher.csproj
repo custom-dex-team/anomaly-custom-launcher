@@ -49,6 +49,7 @@
     <Compile Include="Class1.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DefaultMcmLtx.cs" />
     <Compile Include="DefaultUserLtx.cs" />
     <Compile Include="SelectionUI.cs">
       <SubType>Form</SubType>

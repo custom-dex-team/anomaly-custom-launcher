@@ -15,7 +15,7 @@ namespace Launcher
     internal static class Program
     {
         public static readonly string launcherPath = AppDomain.CurrentDomain.BaseDirectory;
-        public static readonly string parentPath = Directory.GetParent(launcherPath).FullName; 
+        public static readonly string parentPath = Directory.GetParent(Directory.GetParent(launcherPath).FullName).FullName; 
         public static readonly string modOrganizerLtx = Path.Combine(parentPath, "Mod Organizer/overwrite/gamedata/configs/axr_options.ltx");
         public static readonly string modOrganizerLtxOld = Path.Combine(parentPath, "Mod Organizer/overwrite/gamedata/configs/axr_options.ltx.old");
         public static readonly string APPDATA = "appdata";

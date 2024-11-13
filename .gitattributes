@@ -16,6 +16,7 @@
 # Source codes
 *.cs    text eol=crlf encoding=utf-8
 *.ps1   text eol=crlf encoding=utf-8
+*.resx  text eol=crlf encoding=utf-8
 *.xaml  text eol=crlf encoding=utf-8
 *.axaml text eol=crlf encoding=utf-8
 
@@ -24,3 +25,4 @@
 
 # Assets
 *.ico binary
+*.png binary

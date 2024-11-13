@@ -1,7 +1,4 @@
-﻿using AnomalyLauncher;
-using AnomalyLauncher.Properties;
-using AnomalyLauncher.Properties;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -353,7 +350,7 @@ namespace Launcher
             // 
             // radioButtonDX11
             // 
-            this.radioButtonDX11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.radioButtonDX11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButtonDX11.BackColor = System.Drawing.Color.Transparent;
             this.radioButtonDX11.Checked = true;

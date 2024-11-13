@@ -1,13 +1,8 @@
-﻿using AnomalyLauncher;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Launcher
@@ -21,7 +16,6 @@ namespace Launcher
         public static readonly string APPDATA = "appdata";
         private static readonly string BIN = "bin";
         private static readonly string GAMEDATA = "gamedata";
-        private static readonly string TOOLS = "tools";
         public static readonly string USER_LTX = Path.Combine(Program.APPDATA, "user.ltx");
         public static readonly string USER_LTX_OLD = Path.Combine(Program.APPDATA, "user.ltx.old");
         private static readonly string SHADERS_CACHE = Path.Combine(Program.APPDATA, "shaders_cache");

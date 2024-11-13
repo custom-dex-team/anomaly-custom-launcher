@@ -34,7 +34,6 @@ namespace Launcher
         private static bool _deleteShaderCache;
 
         [STAThread]
-
         private static void Main(string[] args)
         {
             string directoryName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -104,7 +103,6 @@ namespace Launcher
             }
 
         }
-
 
         private static void DeleteShaderCache()
         {

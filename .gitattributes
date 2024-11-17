@@ -3,10 +3,11 @@
 * text=auto
 
 # Configs
-.gitattributes text eol=crlf encoding=utf-8
-.gitignore     text eol=crlf encoding=utf-8
-*.props        text eol=crlf encoding=utf-8
-*.targets      text eol=crlf encoding=utf-8
+.gitattributes   text eol=crlf encoding=utf-8
+.gitignore       text eol=crlf encoding=utf-8
+*.props          text eol=crlf encoding=utf-8
+*.targets        text eol=crlf encoding=utf-8
+*.code-workspace text eol=crlf encoding=utf-8
 
 # Projects and solutions
 *.sln            text eol=crlf encoding=utf-8-bom

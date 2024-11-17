@@ -24,6 +24,14 @@ indent_style = tab
 insert_final_newline = true
 tab_width = 4
 
+# Visual Studio Code settings
+[*.code-workspace]
+charset = utf-8
+end_of_line = crlf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+
 # MSBuild configs
 [*.{props,targets}]
 charset = utf-8

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dex.AnomalyCustom.Launcher.WinForms", "src\Dex.AnomalyCustom.Launcher.WinForms\Dex.AnomalyCustom.Launcher.WinForms.csproj", "{3D860A06-1C2B-475C-88E0-E8DAE233A75B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{896A549E-A4F6-401C-8382-91DEDB4CEF27}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -13,7 +11,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 		LICENSE.md = LICENSE.md
 		README.md = README.md
+		Settings.XamlStyler = Settings.XamlStyler
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dex.AnomalyCustom.Launcher.Avalonia.Windows", "src\Dex.AnomalyCustom.Launcher.Avalonia.Windows\Dex.AnomalyCustom.Launcher.Avalonia.Windows.csproj", "{6B11C211-737C-4F2F-8C6D-541E344FD1DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dex.AnomalyCustom.Launcher.Avalonia", "src\Dex.AnomalyCustom.Launcher.Avalonia\Dex.AnomalyCustom.Launcher.Avalonia.csproj", "{A1A4FD40-3B42-4D84-8D42-42045ACA945B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dex.AnomalyCustom.Launcher.WinForms", "src\Dex.AnomalyCustom.Launcher.WinForms\Dex.AnomalyCustom.Launcher.WinForms.csproj", "{8BC54817-1A8A-4087-A06C-C1580B6945AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{FEC8EBF9-E7C9-4026-BCA1-85FE7916D1E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,13 +28,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3D860A06-1C2B-475C-88E0-E8DAE233A75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D860A06-1C2B-475C-88E0-E8DAE233A75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D860A06-1C2B-475C-88E0-E8DAE233A75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D860A06-1C2B-475C-88E0-E8DAE233A75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B11C211-737C-4F2F-8C6D-541E344FD1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B11C211-737C-4F2F-8C6D-541E344FD1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B11C211-737C-4F2F-8C6D-541E344FD1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B11C211-737C-4F2F-8C6D-541E344FD1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A4FD40-3B42-4D84-8D42-42045ACA945B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A4FD40-3B42-4D84-8D42-42045ACA945B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A4FD40-3B42-4D84-8D42-42045ACA945B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A4FD40-3B42-4D84-8D42-42045ACA945B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC54817-1A8A-4087-A06C-C1580B6945AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC54817-1A8A-4087-A06C-C1580B6945AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC54817-1A8A-4087-A06C-C1580B6945AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC54817-1A8A-4087-A06C-C1580B6945AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1A4FD40-3B42-4D84-8D42-42045ACA945B} = {FEC8EBF9-E7C9-4026-BCA1-85FE7916D1E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F845E2E4-8A3D-426A-A898-9193792A7174}

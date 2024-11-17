@@ -1,0 +1,20 @@
+<UserControl
+    x:Class="Dex.AnomalyCustom.Launcher.Avalonia.Views.MainView"
+    x:DataType="vm:MainViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:vm="using:Dex.AnomalyCustom.Launcher.Avalonia.ViewModels"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Design.DataContext>
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+    <TextBlock
+        Text="{Binding Greeting}"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center" />
+</UserControl>

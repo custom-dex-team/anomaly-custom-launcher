@@ -1,6 +1,6 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFrameworks>net35</TargetFrameworks>
+        <TargetFrameworks>net8.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
 
         <AssemblyName>AnomalyLauncher</AssemblyName>

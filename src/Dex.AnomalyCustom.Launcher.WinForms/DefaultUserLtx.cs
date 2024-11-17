@@ -1,9 +1,9 @@
-﻿namespace Launcher
+namespace Launcher;
+
+public class DefaultUserLtx
 {
-    public class DefaultUserLtx
+    public static string[] LINES = new string[460]
     {
-        public static string[] LINES = new string[460]
-        {
         "_preset Default",
         "ai_aim_max_angle 0.7854",
         "ai_aim_min_angle 0.19635",
@@ -464,6 +464,5 @@
         "wpn_aim_toggle off",
         "wpn_degradation 0.5",
         "zoom_step_count 3.",
-        };
-    }
+    };
 }

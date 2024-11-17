@@ -2,6 +2,8 @@
     <PropertyGroup>
         <TargetFrameworks>net8.0-windows</TargetFrameworks>
         <OutputType>WinExe</OutputType>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
 
         <AssemblyName>AnomalyLauncher</AssemblyName>
         <RootNamespace>AnomalyLauncher</RootNamespace>

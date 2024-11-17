@@ -1,9 +1,9 @@
-﻿namespace Launcher
+namespace Launcher;
+
+internal class DefaultMcmLtx
 {
-    internal class DefaultMcmLtx
+    public static string[] LINES = new string[2695]
     {
-        public static string[] LINES = new string[2695]
-        {
         "[character_creation]",
         "new_game_azazel_mode             =",
         "new_game_campfire_mode           =",
@@ -26,14 +26,21 @@
         "new_game_test                    =",
         "new_game_timer_mode              =",
         "new_game_warfare                 =",
-"",
-"[global_keybinds]",
+
+        "",
+
+        "[global_keybinds]",
         "debug_demo_record                = DIK_NUMPAD0",
-"",
-"[igi_tasks]",
+
+        "",
+
+        "[igi_tasks]",
         "tasks_version                    = 3.6",
-"",
-"[mcm]",
+
+        "",
+
+        "[mcm]",
+
         "EA_settings/ea_debug             = false",
         "EA_settings/enable_animations    = true",
         "EA_settings/enable_backpack_addon = false",
@@ -1582,8 +1589,10 @@
         "xcvb_trade/min_event_disc        = -20",
         "xcvb_trade/min_event_time        = 1",
         "xcvb_trade/msg_threshold         = 35",
-"",
-"[options]",
+
+        "",
+
+        "[options]",
         "alife/dynamic_news/bounty_news   = true",
         "alife/dynamic_news/companions_news = true",
         "alife/dynamic_news/cycle_of_companions_news = 240",
@@ -2684,21 +2693,26 @@
         "video/weather/rain_occurrence    = 3",
         "video/weather/storm_occurrence   = 3",
         "video/weather/storm_period       = 6",
-"",
-"[pda_contacts]",
+
+        "",
+
+        "[pda_contacts]",
         "check_refresh                    = false",
         "check_show_known                 = false",
-"",
-"[temp]",
+
+        "",
+
+        "[temp]",
         "base_sway                        = on",
         "fov_changed                      = false",
         "fov_value                        = 0.64999997615814",
         "rspec_default                    = true",
-"",
-"[unlocked_factions]",
+
+        "",
+
+        "[unlocked_factions]",
         "greh                             = true",
         "isg                              = true",
         "renegade                         = true",
-        };
-    }
+    };
 }

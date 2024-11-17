@@ -32,6 +32,14 @@ indent_size = 4
 indent_style = space
 insert_final_newline = true
 
+# YAML-based configs
+[*.{yml,yaml}]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+
 # MSBuild configs
 [*.{props,targets}]
 charset = utf-8

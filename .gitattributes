@@ -8,6 +8,8 @@
 *.props          text eol=crlf encoding=utf-8
 *.targets        text eol=crlf encoding=utf-8
 *.code-workspace text eol=crlf encoding=utf-8
+*.yml            text eol=lf encoding=utf-8
+*.yaml           text eol=lf encoding=utf-8
 
 # Projects and solutions
 *.sln            text eol=crlf encoding=utf-8-bom

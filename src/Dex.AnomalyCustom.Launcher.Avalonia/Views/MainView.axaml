@@ -12,9 +12,7 @@
     <Design.DataContext>
         <vm:MainViewModel />
     </Design.DataContext>
-
-    <TextBlock
-        Text="{Binding Greeting}"
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center" />
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+        <Button HorizontalAlignment="Center" Background="Cyan">Play Custom</Button>
+    </StackPanel>
 </UserControl>

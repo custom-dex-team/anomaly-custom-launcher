@@ -6,10 +6,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:v="using:Dex.AnomalyCustom.Launcher.Avalonia.Views"
     Title="Anomaly Custom Launcher"
+    Width="1000"
+    Height="600"
     d:DesignHeight="450"
     d:DesignWidth="800"
     Icon="/Assets/Logo.ico"
-    Background="AliceBlue"
     mc:Ignorable="d">
     <v:MainView />
+
+    <Window.Background>
+        <ImageBrush
+            Source="../Assets/Background/background_1.png"
+            Stretch="UniformToFill" />
+    </Window.Background>
+
 </Window>

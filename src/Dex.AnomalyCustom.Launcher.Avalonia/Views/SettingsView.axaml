@@ -9,8 +9,164 @@
     d:DesignHeight="400"
     d:DesignWidth="600"
     mc:Ignorable="d">
-    
-    
-    
+
+    <UserControl.Styles>
+        <Style Selector="Slider">
+            <Setter Property="Width" Value="64" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+        <Style Selector="TextBlock">
+            <Setter Property="Height" Value="16" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+    </UserControl.Styles>
+
+    <ScrollViewer
+        HorizontalScrollBarVisibility="Disabled"
+        VerticalScrollBarVisibility="Auto">
+        <Grid Background="DimGray">
+            <TabControl>
+                <TabItem Header="Графические">
+                    <StackPanel Margin="5">
+                        <!-- Слайдеры -->
+                        <!-- Дальность прорисовки травы -->
+                        <TextBlock Text="Дальность прорисовки травы" />
+                        <TextBlock Text="{Binding #r__detail_radius_slider.Value, StringFormat=\{0:0.#\}}}" />
+                        <Slider
+                            Name="r__detail_radius_slider"
+                            Value="50"
+                            IsSnapToTickEnabled="True"
+                            LargeChange="50"
+                            Maximum="250"
+                            Minimum="50"
+                            TickFrequency="50" />
+                        <!-- Высота травы -->
+                        <TextBlock
+                            Text="Высота травы"
+                            Margin="0,5,0,0" />
+                        <TextBlock Text="{Binding #r__detail_height_slider.Value, StringFormat=\{0:0.#\}}}" />
+                        <Slider
+                            Name="r__detail_height_slider"
+                            Value="0.5"
+                            Maximum="2.0"
+                            Minimum="0.5"
+                            SmallChange="0.1" />
+                        <!-- Плотность травы -->
+                        <TextBlock
+                            Text="Плотность травы "
+                            Margin="0,5,0,0" />
+                        <TextBlock Text="{Binding #r__detail_density.Value, StringFormat=\{0:0.#\}}}" />
+                        <Slider
+                            Name="r__detail_density"
+                            Value="0.5"
+                            Maximum="1.0"
+                            Minimum="0.0"
+                            SmallChange="0.1" />
+                        <!-- Дальность освещения -->
+                        <TextBlock
+                            Text="Дальность освещения"
+                            Margin="0,5,0,0" />
+                        <TextBlock Text="{Binding #r2_slight_fade.Value, StringFormat=\{0:0.#\}}}" />
+                        <Slider
+                            Name="r2_slight_fade"
+                            Value="0.5"
+                            IsSnapToTickEnabled="True"
+                            Maximum="1.0"
+                            Minimum="0.5"
+                            SmallChange="0.5"
+                            TickFrequency="0.5" />
+                        <!-- Качество теней -->
+                        <TextBlock
+                            Text="Качество теней"
+                            Margin="0,5,0,0" />
+                        <TextBlock Text="{Binding #r2_ls_squality.Value, StringFormat=\{0:0.#\}}}" />
+                        <Slider
+                            Name="r2_ls_squality"
+                            Value="0.5"
+                            IsSnapToTickEnabled="True"
+                            Maximum="1.0"
+                            Minimum="0.5"
+                            SmallChange="0.1"
+                            TickFrequency="0.5" />
+
+                        <!-- Чекбоксы -->
+                        <!-- r2_detail_bump Детальный рельеф -->
+                        <CheckBox IsChecked="True">Детальный рельеф</CheckBox>
+
+                        <!-- r2_soft_particles мягкие частицы -->
+                        <CheckBox IsChecked="True">Мягкие частицы</CheckBox>
+
+                        <!-- r2_sun Тень от солнца -->
+                        <CheckBox IsChecked="True">Тень от солнца</CheckBox>
+
+                        <!-- r__actor_shadow тень от ГГ -->
+                        <CheckBox IsChecked="True">Тень от главного героя</CheckBox>
+
+                        <!-- r__enable_grass_shadow тень от травы -->
+                        <CheckBox IsChecked="True">Тень от травы</CheckBox>
+
+                        <StackPanel
+                            Orientation="Vertical"
+                            Spacing="10">
+                            <!-- Первый ComboBox -->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <!-- Ширина для TextBlock -->
+                                    <ColumnDefinition Width="2*" />
+                                    <!-- Ширина для ComboBox -->
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Grid.Column="0"
+                                    Text="Качество солнца" />
+                                <ComboBox Grid.Column="1">
+                                    <ComboBoxItem Content="Низко" />
+                                    <ComboBoxItem Content="Средне" />
+                                    <ComboBoxItem Content="Высоко" />
+                                    <ComboBoxItem Content="Ультра" />
+                                    <ComboBoxItem Content="Экстрим" />
+                                </ComboBox>
+                            </Grid>
+
+                            <!-- Второй ComboBox -->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Grid.Column="0"
+                                    Text="Качество солнечных лучей" />
+                                <ComboBox Grid.Column="1">
+                                    <ComboBoxItem Content="Низко" />
+                                    <ComboBoxItem Content="Средне" />
+                                    <ComboBoxItem Content="Высоко" />
+                                </ComboBox>
+                            </Grid>
+
+                            <!-- Третий ComboBox -->
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock
+                                    Grid.Column="0"
+                                    Text="SMAA" />
+                                <ComboBox Grid.Column="1">
+                                    <ComboBoxItem Content="Отключено" />
+                                    <ComboBoxItem Content="Низко" />
+                                    <ComboBoxItem Content="Средне" />
+                                    <ComboBoxItem Content="Высоко" />
+                                    <ComboBoxItem Content="Очень высоко" />
+                                </ComboBox>
+                            </Grid>
+                        </StackPanel>
+
+                    </StackPanel>
+                </TabItem>
+
+            </TabControl>
+        </Grid>
+    </ScrollViewer>
 </UserControl>
-  

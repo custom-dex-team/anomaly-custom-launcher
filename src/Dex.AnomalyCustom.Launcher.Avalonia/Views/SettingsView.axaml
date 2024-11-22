@@ -27,7 +27,17 @@
         <Grid Background="DimGray">
             <TabControl>
                 <TabItem Header="Графические">
-                    <StackPanel Margin="5">
+                    <StackPanel
+                        Margin="5"
+                        Spacing="10">
+                        <TextBlock
+                            Text="Видео расширенные"
+                            Height="32"
+                            FontSize="24"
+                            FontWeight="Black"
+                            Foreground="LightSteelBlue"
+                            TextDecorations="Underline" />
+
                         <!-- Слайдеры -->
                         <!-- Дальность прорисовки травы -->
                         <TextBlock Text="Дальность прорисовки травы" />
@@ -162,7 +172,81 @@
                                 </ComboBox>
                             </Grid>
                         </StackPanel>
+                        <TextBlock
+                            Text="SSS"
+                            Height="32"
+                            FontSize="24"
+                            FontWeight="Black"
+                            Foreground="LightSteelBlue"
+                            TextDecorations="Underline" />
 
+                        <StackPanel
+                            Orientation="Vertical"
+                            Spacing="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- ssfx_module/shw_cascades/grass_shw_quality_mcm  качество теней от травы -->
+                                <TextBlock
+                                    Grid.Column="0"
+                                    Text="Качество теней от травы" />
+                                <ComboBox Grid.Column="1">
+                                    <ComboBoxItem Content="Низко" />
+                                    <ComboBoxItem Content="Средне" />
+                                    <ComboBoxItem Content="Высоко" />
+                                    <ComboBoxItem Content="Ультра" />
+                                    <ComboBoxItem Content="Экстрим" />
+                                </ComboBox>
+                            </Grid>
+
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="2*" />
+                                </Grid.ColumnDefinitions>
+                                <!-- ssfx_module/water/parallax_quality_mcm  качество волн -->
+                                <TextBlock
+                                    Grid.Column="0"
+                                    Text="Качество волн" />
+                                <ComboBox Grid.Column="1">
+                                    <ComboBoxItem Content="Выключить" />
+                                    <ComboBoxItem Content="Низкие" />
+                                    <ComboBoxItem Content="Средние" />
+                                    <ComboBoxItem Content="Высокие" />
+                                </ComboBox>
+                            </Grid>
+
+                        </StackPanel>
+                    </StackPanel>
+                </TabItem>
+
+                <!-- Технические -->
+                <TabItem Header="Технические">
+                    <StackPanel>
+                        <ComboBox PlaceholderText="Shadow Map">
+                            <ComboBoxItem Content="1536" />
+                            <ComboBoxItem Content="2048" />
+                            <ComboBoxItem Content="2560" />
+                            <ComboBoxItem Content="3072" />
+                            <ComboBoxItem Content="4096" />
+                        </ComboBox>
+
+                        <CheckBox IsChecked="True">Дебаг меню</CheckBox>
+                        <CheckBox IsChecked="False">Сбросить user.ltx</CheckBox>
+                        <CheckBox IsChecked="False">Сбросить настройки MCM</CheckBox>
+
+                        <StackPanel
+                            Orientation="Horizontal"
+                            Spacing="5">
+                            <Button
+                                Content="Удалить шейдер кеш"
+                                Height="32" />
+                            <CheckBox Content="Удалять шейдер кеш при каждом запуске" />
+                        </StackPanel>
                     </StackPanel>
                 </TabItem>
 

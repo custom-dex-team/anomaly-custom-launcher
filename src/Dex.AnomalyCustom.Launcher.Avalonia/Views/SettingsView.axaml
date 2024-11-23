@@ -1,14 +1,20 @@
 <UserControl
     x:Class="Dex.AnomalyCustom.Launcher.Avalonia.SettingsView"
+    x:DataType="vm:SettingsViewModel"
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:vm="using:Dex.AnomalyCustom.Launcher.Avalonia.ViewModels"
     Width="600"
     Height="400"
     d:DesignHeight="400"
     d:DesignWidth="600"
     mc:Ignorable="d">
+    <Design.DataContext>
+        <vm:SettingsViewModel />
+    </Design.DataContext>
+
     <UserControl.Styles>
         <Style Selector="Slider">
             <Setter Property="Width" Value="64" />
@@ -236,13 +242,9 @@
                 <!-- Технические -->
                 <TabItem Header="Технические">
                     <StackPanel>
-                        <ComboBox PlaceholderText="Shadow Map">
-                            <ComboBoxItem Content="1536" />
-                            <ComboBoxItem Content="2048" />
-                            <ComboBoxItem Content="2560" />
-                            <ComboBoxItem Content="3072" />
-                            <ComboBoxItem Content="4096" />
-                        </ComboBox>
+                        <ComboBox
+                            ItemsSource="{Binding ShadowMapValues}"
+                            PlaceholderText="Shadow Map" />
 
                         <CheckBox IsChecked="True">Дебаг меню</CheckBox>
                         <CheckBox IsChecked="False">Сбросить user.ltx</CheckBox>
@@ -253,8 +255,11 @@
                             Spacing="5">
                             <Button
                                 Content="Удалить шейдер кеш"
+                                Command="{Binding DeleteShaderCacheCommand}"
                                 Height="32" />
-                            <CheckBox Content="Удалять шейдер кеш при каждом запуске" />
+                            <CheckBox
+                                Content="Удалять шейдер кеш при каждом запуске"
+                                IsChecked="{Binding IsDeleteShaderCache}" />
                         </StackPanel>
                     </StackPanel>
                 </TabItem>

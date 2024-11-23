@@ -12,6 +12,7 @@
     <Design.DataContext>
         <vm:MainViewModel />
     </Design.DataContext>
+
     <!-- Ресуры иконок -->
     <UserControl.Resources>
         <!-- Discrod Icon -->
@@ -31,6 +32,7 @@
             <ColumnDefinition Width="250" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+
         <!-- Левая панель -->
         <Grid>
             <Grid.Styles>
@@ -45,6 +47,7 @@
                     <Setter Property="Height" Value="48" />
                 </Style>
             </Grid.Styles>
+
             <!-- Настройки -->
             <StackPanel Orientation="Horizontal">
                 <Button>
@@ -61,6 +64,7 @@
                             VerticalAlignment="Center" />
                     </StackPanel>
                 </Button>
+
                 <Button>
                     <StackPanel
                         Margin="10"
@@ -73,7 +77,6 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
-
 
             <StackPanel
                 HorizontalAlignment="Center"
@@ -106,6 +109,7 @@
                     </StackPanel>
                 </Border>
             </StackPanel>
+
             <Border
                 Grid.Column="0"
                 Background="#80000000"
@@ -135,6 +139,5 @@
                 Height="48"
                 Margin="30" />
         </Grid>
-        <!-- Конец контейнера -->
     </Grid>
 </UserControl>

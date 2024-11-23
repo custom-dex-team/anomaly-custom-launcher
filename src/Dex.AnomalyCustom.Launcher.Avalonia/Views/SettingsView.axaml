@@ -9,7 +9,6 @@
     d:DesignHeight="400"
     d:DesignWidth="600"
     mc:Ignorable="d">
-
     <UserControl.Styles>
         <Style Selector="Slider">
             <Setter Property="Width" Value="64" />
@@ -39,6 +38,7 @@
                             TextDecorations="Underline" />
 
                         <!-- Слайдеры -->
+
                         <!-- Дальность прорисовки травы -->
                         <TextBlock Text="Дальность прорисовки травы" />
                         <TextBlock Text="{Binding #r__detail_radius_slider.Value, StringFormat=\{0:0.#\}}}" />
@@ -50,6 +50,7 @@
                             Maximum="250"
                             Minimum="50"
                             TickFrequency="50" />
+
                         <!-- Высота травы -->
                         <TextBlock
                             Text="Высота травы"
@@ -61,6 +62,7 @@
                             Maximum="2.0"
                             Minimum="0.5"
                             SmallChange="0.1" />
+
                         <!-- Плотность травы -->
                         <TextBlock
                             Text="Плотность травы "
@@ -72,6 +74,7 @@
                             Maximum="1.0"
                             Minimum="0.0"
                             SmallChange="0.1" />
+
                         <!-- Дальность освещения -->
                         <TextBlock
                             Text="Дальность освещения"
@@ -85,6 +88,7 @@
                             Minimum="0.5"
                             SmallChange="0.5"
                             TickFrequency="0.5" />
+
                         <!-- Качество теней -->
                         <TextBlock
                             Text="Качество теней"
@@ -100,6 +104,7 @@
                             TickFrequency="0.5" />
 
                         <!-- Чекбоксы -->
+
                         <!-- r2_detail_bump Детальный рельеф -->
                         <CheckBox IsChecked="True">Детальный рельеф</CheckBox>
 
@@ -126,6 +131,7 @@
                                     <ColumnDefinition Width="2*" />
                                     <!-- Ширина для ComboBox -->
                                 </Grid.ColumnDefinitions>
+
                                 <TextBlock
                                     Grid.Column="0"
                                     Text="Качество солнца" />
@@ -144,6 +150,7 @@
                                     <ColumnDefinition Width="1*" />
                                     <ColumnDefinition Width="2*" />
                                 </Grid.ColumnDefinitions>
+
                                 <TextBlock
                                     Grid.Column="0"
                                     Text="Качество солнечных лучей" />
@@ -160,6 +167,7 @@
                                     <ColumnDefinition Width="1*" />
                                     <ColumnDefinition Width="2*" />
                                 </Grid.ColumnDefinitions>
+
                                 <TextBlock
                                     Grid.Column="0"
                                     Text="SMAA" />
@@ -172,6 +180,7 @@
                                 </ComboBox>
                             </Grid>
                         </StackPanel>
+
                         <TextBlock
                             Text="SSS"
                             Height="32"
@@ -202,12 +211,12 @@
                                 </ComboBox>
                             </Grid>
 
-
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*" />
                                     <ColumnDefinition Width="2*" />
                                 </Grid.ColumnDefinitions>
+
                                 <!-- ssfx_module/water/parallax_quality_mcm  качество волн -->
                                 <TextBlock
                                     Grid.Column="0"
@@ -249,7 +258,6 @@
                         </StackPanel>
                     </StackPanel>
                 </TabItem>
-
             </TabControl>
         </Grid>
     </ScrollViewer>

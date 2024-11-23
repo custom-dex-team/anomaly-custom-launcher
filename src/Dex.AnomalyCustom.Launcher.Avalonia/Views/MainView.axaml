@@ -88,7 +88,7 @@
                         Margin="20"
                         Orientation="Horizontal"
                         Spacing="30">
-                        <Button>
+                        <Button Command="{Binding OpenVKCommand}">
                             <!-- VK -->
                             <PathIcon
                                 Data="{DynamicResource vk_logo_icon}"
@@ -136,6 +136,7 @@
 
             <Button
                 Content="Play Anomaly Custom"
+                Command="{Binding PlayCustomCommand}"
                 Height="48"
                 Margin="30" />
         </Grid>

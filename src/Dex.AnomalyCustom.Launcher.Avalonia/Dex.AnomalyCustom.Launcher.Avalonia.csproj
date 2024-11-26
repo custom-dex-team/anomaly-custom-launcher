@@ -15,7 +15,7 @@
         <PackageReference Include="Avalonia.Diagnostics" Condition="'$(Configuration)' == 'Debug'" />
         <PackageReference Include="Avalonia.Fonts.Inter" />
         <PackageReference Include="Avalonia.ReactiveUI" />
-        <PackageReference Include="Avalonia.Themes.Fluent" />
+        <PackageReference Include="Avalonia.Themes.Simple" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
     </ItemGroup>
 </Project>
